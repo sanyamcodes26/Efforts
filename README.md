@@ -5,4 +5,5 @@ DATE    -   CHANGES
 [26-12-2019]  -   [Multiple changes along with directory insertion and deletion]\
 [01-01-2020]  -   [Udemy Additions]\
 [02-01-2020]  -   [Udemy Additions]\
-[01-01-2020]  -   []\
+[03-01-2020]  -   [Udemy Additions, Regular Expressions(29-34)]\
+[03-01-2020]  -   []\
