@@ -6,4 +6,5 @@ DATE    -   CHANGES
 [01-01-2020]  -   [Udemy Additions]\
 [02-01-2020]  -   [Udemy Additions]\
 [03-01-2020]  -   [Udemy Additions, Regular Expressions(29-34)]\
+[09-01-2020]  -   [Udemy Additions, SQLite]\
 [03-01-2020]  -   []\
