@@ -8,4 +8,5 @@ DATE    -   CHANGES\
 [03-01-2020]  -   [Udemy Additions, Regular Expressions(29-34)]\
 [09-01-2020]  -   [Udemy Additions, SQLite]\
 [09-01-2020]  -   [OGma Additions]\
+[10-01-2020]  -   [OGma Additions]\
 [00-01-2020]  -   []\
