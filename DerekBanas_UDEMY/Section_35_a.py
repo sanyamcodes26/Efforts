@@ -1,7 +1,6 @@
 '''
 C:\Users\Akash_PC\Documents\sqlite3>sqlite3 Student.db
 SQLite version 3.30.1 2019-10-10 20:19:45
-
 sqlite> create table sex( id text primary key not null, sex_type integer not null);
 sqlite> insert into sex(id, sex_type) values ('M', 1);
 sqlite> insert into sex(id, sex_type) values ('F', 2);
