@@ -1,0 +1,153 @@
+Supervised 
+D1[Training DataSet] --> D5[Test DataSet]
+D1 supervising the model for D5
+
+Un-Supervised
+Split D1 in x : y ratio
+
+MATHS :-
+Mean
+Median
+Mode
+Correlation Regression
+PDF
+Classification
+Segregation
+
+PROBLEM :-
+Three Cannibal Three Monks
+
+Fitting Algorithm
+
+ROAD MAP :-
+Business Intelligence
+Data Analysis
+Data Analytics
+Data Engineering
+Data Science 
+
+LIBRARIES :-
+conda install panadas
+conda install numpy
+conda install tenserflow
+conda install tenserflow-gpu
+
+conda create -n test1
+conda activate test_1
+conda deactivate
+
+conda remove -n test_1 -all
+________________________
+
+random sampling
+representative sampling
+
+sample : key + feature(information about the key)
+eg: 	Key	-	Chair
+	Attribute	-	Plastic, cusion, width, height, color, manufacture
+_________________________
+
+Regression Continuous Data
+Classification Dis-Continuous Data
+Data -> Model -> Train -> Optimization Algorithm
+Training -> Supervised / Un-Supervised / Reinforcement
+Result interpretation -> Loss / Gain
+
+Supervised Training :-
+It is called so as we provide the algorithm not only with the input but also the target(desired o/p).
+Based on that algorithm learn how to produce an output as close as to the target as possible. The objective function in supervised learning is called loss function(cost funciton, error function). In this method we try to minimize the loss as low as possible, and the accuracy as high as possible.
+For Linearly spread Data points...
+y = mx + c
+m -> Gradient
+c -> Bias
+High Risk Factors : Points lying below the classification line
+Risk One Factors  : Points lying on the classification line
+Low Risk Factors  : Points lying above the classification line
+Types :-
+1. Classification
+2. Regression
+
+Un-Supervised Learning:-
+The researcher feeds the model with input but not the targets, instead the researcher asks it to find some sortof dependence or underlying logic in the data provided.
+Eg: You may have the financial data of 100 states, and the model manages to divide them into 5 groups(20 each). you then examine 5 clusters(groups) and reach the conclusion that the groups are
+>> Developed
+>> Developing but Overachieving
+>> Developing but Underachieving
+>> Stagnating
+>> Worsening
+The algorithm divide them into 5 groups based on similarities and dissimilarities, but you don't know the  similarities and dissimilarities, maybe region, financial, location.. common is clustering.
+
+Reinforcement Learning:-
+The goal of the algorithm is to maximize its reward. It is inspired by human behaviour and by the way people change their accent according to their insentive such as getting reward or avoiding punishment.
+>> Positive Reinforcement (reward)
+>> Negetive Reinforcement (punishment)
+The objective function is called a reward / punishment function.
+target is max(reward) or min(punishment)
+Eg: Supermario Scoring system.(reward function)
+Common methods used Reinforcement ML is Decision Process and Reward System.
+
+Blocks Of Machine Learning:
+4 ingredient:
+>> Data
+>> Model
+>> Objective Function
+>> Optimize Algorithm
+
+1. To prepare a certain amount of data to train on.(Normally used historical data)
+2. Choose a model, then feed that data into model.
+    This is some function(model) which is defined by the weight and the biases.
+    The idea of feeding data into algorithms is to make understand the ML algorithm parameters.
+    To find parameters for which the model finds highest predictive power.
+3. The Objective Function measures the predictive power of our model,
+    mathematically speaking ML problem boils down to optimising the function.
+4. The Optimization Algorithm optimses the value from objective function,
+    it will process until we find the best parameters.
+
+Exercise:-
+Cat....(1, 0, 0)..Optimization Functions
+Dog....(0, 1, 0)
+Horse..(0, 0, 1)
+...Let a model have (.3, .6, 1)
+Cat	= + .3*100*1 - .6*100*0 - 1*100*0 = 30
+Dog	= - .3*100*0 + .6*100*1 - 1*100*0 = 60
+Horse	= - .3*100*0 - .6*100*0 + 1*100*1 = 100
+Since, Horse > Dog > Cat
+Hence "Horse"
+...Let a model have (.4, .4, 4)
+Cat	= + .4*100*1 - .4*100*0 - .4*100*0 = 40
+Dog	= - .4*100*0 + .4*100*1 - .4*100*0 = 40
+Horse	= - .4*100*0 - .4*100*0 + .4*100*1 = 40
+Since, Horse = Dog = Cat
+Hence "Undetermined"
+
+REGRESSION Outputs are continuous numbers, predicting Euro -> INR for tomorrow , the output is a number is like 125. Predict the value of a house.
+(900sq.ft. * 18000/-) + 30%(superbuild) + 5%(Maintenance) + 7%(Taxes).....Today
+some factors that continuously change the feed price of the plots..
+prediction of price depending on place.
+The distinct proof to be crucial in ML as the algorithm somewhat gets additional information as input from output.(feedback Loop)
+
+CLASSIFICATION output is label of some sort of class. 
+classification in terms of parameters.
+Eg : Classifying photo of animals,
+In the case of classification the levels are unordered or cannot be compared at all.
+Eg : A dog photo is not more or better than a cat photo
+Eg : same way two plots sold at different prices at different places can not be compared.
+
+Objective Function can be split into two parts:
+1. Loss (Supervised L)
+...Two common loss functions are ---
+>> L2 NORMS loss
+	SIGMA((y - dy)**2)
+	The L2 NORMS of a vector(A) is given by equilidean distance.
+	||a|| = SQRT(a^T * a) = SQRT(a1**2 + a2**2 + a3**2 + a4**2 + a5**2 + ... +am**2)...m dimensions.
+	The main rationale is that the L2 NORM loss is basically the distance of the origin,
+	so the closer to the origin less is the error.(The distance between o/p and target are going minimal)
+	The lower the loss, the better is the prediction.
+>> Cross-Entropy loss
+	(-)SIGMA(t_i * ln_y_i)
+	The Cross-Entropy loss is mainly used for classification,
+	entropy comes from information theory and measures how much information one is missing to the answer of a question.
+	Cross-entropy works with probability, one is our opinion and other is the true probability ie 1 by definition.
+	If CrossEntropy is 0 then we are not missing any informaition and we have a perfect model.
+
+2. Reward (Reinforcement L)

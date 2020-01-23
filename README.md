@@ -10,4 +10,5 @@ DATE    -   CHANGES\
 [09-01-2020]  -   [OGma Additions]\
 [10-01-2020]  -   [OGma Additions]\
 [14-01-2020]  -   [OGma Additions, Udemy Additions]\
+[23-01-2020]  -   [OGma Additions]\
 [00-01-2020]  -   []\
