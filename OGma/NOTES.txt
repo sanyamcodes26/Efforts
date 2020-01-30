@@ -9,7 +9,8 @@ MATHS :-
 Mean
 Median
 Mode
-Correlation Regression
+Linear Regression
+Logistic Regression
 PDF
 Classification
 Segregation

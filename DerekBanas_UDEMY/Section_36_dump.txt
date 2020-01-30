@@ -1,0 +1,26 @@
+BEGIN TRANSACTION;
+CREATE TABLE employees(
+                                id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                f_name TEXT NOT NULL,
+                                l_name TEXT NOT NULL,
+                                age INT NOT NULL,
+                                address TEXT,
+                                salary REAL,
+                                hire_date TEXT);
+INSERT INTO "employees" VALUES(1,'Akash','Sengupta',21,'48 A/1 UMR',5000.0,'2020-01-22');
+DELETE FROM "sqlite_sequence";
+INSERT INTO "sqlite_sequence" VALUES('employees',1);
+COMMIT;
+BEGIN TRANSACTION;
+CREATE TABLE employees(
+                                id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                                f_name TEXT NOT NULL,
+                                l_name TEXT NOT NULL,
+                                age INT NOT NULL,
+                                address TEXT,
+                                salary REAL,
+                                hire_date TEXT, 'image' BLOB DEFAULT NULL);
+INSERT INTO "employees" VALUES(2,'Akash','Sengupta',21,'Road Link',5000.0,'2020-01-22',NULL);
+DELETE FROM "sqlite_sequence";
+INSERT INTO "sqlite_sequence" VALUES('employees',2);
+COMMIT;
