@@ -1,0 +1,82 @@
+<head>
+<canvas id="c1" width="400" height="400"></canvas>
+<script>
+	window.onload = function()
+	{
+		canvs = document.getElementById("c1");
+		cntxt = canvs.getContext("2d");
+		document.addEventListener("keydown",keyPush);
+		setInterval(game,1000/10);
+	}
+	x_vel = y_vel = 0;
+	pos_x = pos_y = 10;
+	grd_sz = tl_cnt = 20;
+	apl_x = apl_y = 15;
+	trail = []
+	tail = 2;
+	function game()
+	{
+		pos_x += x_vel;
+		pos_y += y_vel;
+		if(pos_x < 0)
+		{
+			pos_x = tl_cnt-1;
+		}
+		if(pos_x > tl_cnt-1)
+		{
+			pos_x = 0;
+		}
+		if(pos_y < 0)
+		{
+			pos_y = tl_cnt-1;
+		}
+		if(pos_y > tl_cnt-1)
+		{
+			pos_y = 0;
+		}
+		cntxt.fillStyle = "black";
+		cntxt.fillRect(0,0,canvs.width,canvs.height);
+		
+		cntxt.fillStyle = "lime";
+		for(var i=0; i<trail.length; i++)
+		{
+			cntxt.fillRect(trail[i].x*grd_sz,trail[i].y*grd_sz,grd_sz-2,grd_sz-2);
+			if(trail[i].x==pos_x && trail[i].y==pos_y)
+			{
+				tail = 2;
+				document.getElementById("it").innerHTML = tail-3;
+			}
+		}
+		trail.push({x:pos_x,y:pos_y});
+		while(trail.length > tail)
+		{
+			trail.shift();
+		}
+		if(apl_x==pos_x && apl_y==pos_y)
+		{
+			tail++;
+			document.getElementById("it").innerHTML = tail-3;
+			apl_x = Math.floor(Math.random()*tl_cnt);
+			apl_y = Math.floor(Math.random()*tl_cnt);
+		}
+		cntxt.fillRect(apl_x*grd_sz, apl_y*grd_sz, grd_sz-2, grd_sz-2);
+		
+		cntxt.fillStyle = "red";
+		cntxt.fillRect(apl_x*grd_sz, apl_y*grd_sz, grd_sz-2, grd_sz-2);
+	}
+	function keyPush(evt)
+	{
+		switch(evt.keyCode)
+		{
+			case 37:x_vel = -1; y_vel = 0;break;
+			case 38:x_vel= 0; y_vel = -1;break;
+			case 39:x_vel= 1; y_vel = 0;break;
+			case 40:x_vel= 0; y_vel = 1;break;
+		}
+	}
+</script>
+</head>
+<body>
+<h1>SCORE :</h1>
+<h2 id="it"></h2>
+</body>

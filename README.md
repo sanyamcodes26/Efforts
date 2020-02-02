@@ -12,3 +12,5 @@ DATE    -   CHANGES\
 [14-01-2020]  -   [OGma Additions, Udemy Additions]\
 [23-01-2020]  -   [OGma Additions]\
 [30-01-2020]  -   [OGma Addition, Practical Python]\
+[02-02-2020]  -   [PC Commit]\
+[02-02-2020]  -   []\
